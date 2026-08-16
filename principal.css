@@ -34,7 +34,7 @@ header {
 }
 header img {
     width: 6rem;
-    height: 4rem; 
+    height: 4rem;
 }
 
 .logo-clara {
@@ -61,18 +61,24 @@ header li {
     font-weight: 600;
     position: relative;
 }
-header li::after{
+
+header li::after {
     content: '';
     position: absolute;
-    width: 0;            /* A linha começa invisível (largura 0) */
-    height: 2px;         /* Espessura da linha */
-    bottom: -2px;        /* Distância logo abaixo do texto */
-    left: 0;             /* Alinhada à esquerda */
-    background-color: blueviolet; /* Cor da linha */
-    transition: width 0.3s ease-in-out; /* Suaviza o movimento */
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    right: 0;
+    background-color: blueviolet;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
 }
+
 header li:hover::after {
-    width: 100%;         /* A linha cresce preenchendo todo o texto */
+    transform: scaleX(1);
+    transform-origin: left;
 }
 .trilho {
     width: 50px;
@@ -94,10 +100,11 @@ header li:hover::after {
     transition: 0.5s;
 }
 
-
+/* ===================================================================================================== */
 /* Modo claro e escuro */
 
 /* Quando o tema escuro estiver ativo */
+/* CABEÇARIO */
 header.dark .logo-clara {
     display: block;
 }
@@ -109,6 +116,7 @@ header.dark .logo-escura {
 header.dark {
     background-color: white;
 }
+
 header.dark li {
     color: black;    
 }
@@ -122,9 +130,163 @@ header.dark li {
     background-color: #fff;
 }
 
+/* SESSÕES */
 body.dark {
     background-color: #e4e4e4;
 }
 
-/* ===================================================================================================== */
 
+/* RODAPÉ */
+footer.dark {
+    background-color: white;
+}
+footer.dark a {
+    color: black;
+    font-weight: bold;
+}
+footer.dark h2 {
+    color: black;
+}
+footer.dark .div-box .empresa .logo h2 {
+    color: black;
+}
+footer.dark .div-box .empresa .logo p {
+    color: black;
+}
+footer.dark .div-box .empresa .sobre p {
+    color: black;
+}
+footer.dark .contato .box .box-contato .segundo{
+    color: black;
+    font-weight: bold;
+}
+
+/* ===================================================================================================== */
+/* SESSÕES */
+
+
+
+
+
+
+
+/* ===================================================================================================== */
+footer {
+    background-color: black;
+    height: 40vh;
+    width: 100%;
+    transition: 0.5s;
+}
+footer a{
+    color: white;
+}
+
+footer .div-box {
+    display: flex;
+}
+
+/* caixas em geral */
+footer .div-box div {
+    padding: 10px;
+    margin: 5px;
+}
+
+/* EMPRESA */
+footer .div-box .empresa {
+    width: 55%;
+}
+footer .div-box .empresa .logo{
+    display: flex;
+    margin-bottom: 5rem;
+    gap: 20px;
+}
+footer .div-box .empresa .logo h2 {
+    font-size: 50px;
+    color: white;
+}
+footer .div-box .empresa .logo p {
+    margin-top: -3%;
+    font-size: 20px;
+    color: white;
+}
+footer .div-box .empresa .sobre p {
+    font-size: 22px;
+    margin: 20px;
+    color: white;
+}
+
+
+/* NAVEGAÇÃO */
+footer .navegação {
+    width: 20%;
+}
+footer .navegação h3 {
+    color: blueviolet;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer .navegação li {
+    margin-bottom: 15px;
+}
+
+
+/* SERVIÇO */
+footer .serviços {
+    width: 20%;
+}
+footer .serviços h3 {
+    color: blueviolet;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer .serviços li {
+    margin-bottom: 10px;
+}
+
+
+/* CONTATO */
+footer .contato {
+    width: 35%;
+}
+footer .contato h3 {
+    color: blueviolet;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer .contato .box {
+    display: flex;
+}
+footer .contato .box .primeiro{
+    color: blueviolet;
+    font-weight: bolder;
+}
+footer .contato .box .segundo{
+    color: white;
+}
+
+.navegação ul li a,
+.serviços ul li a {
+    position: relative;
+    text-decoration: none;
+}
+
+.navegação ul li a::after,
+.serviços ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8a2be2;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.navegação ul li a:hover::after,
+.serviços ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
