@@ -188,6 +188,23 @@ body.dark .sobre .sobre-box .box-dir {
     
 }
 
+/* SESSÃO 3 */
+body.dark .serviços {
+        background-color: white;
+        transition: 0.5s ease;
+}
+body.dark .serviços h2 {
+    color: black;
+}
+body.dark .serviços .box-serviços .box-tipos {
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.877);
+    opacity: 0.6;
+}
+body.dark .serviços .box-serviços .box-tipos:hover {
+    box-shadow: -4px 4px 10px black;
+    opacity: 1;
+}
+
 /* RODAPÉ */
 footer.dark .logo-clara {
     display: block;
@@ -237,6 +254,7 @@ footer.dark .contato .box i {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,6 +479,71 @@ footer.dark .contato .box i {
 }
 
 
+/* SESSÃO 3 */
+.serviços {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    transition: 0.5s ease;
+}
+.serviços h2 {
+    font-size: 55px;
+    color: white;
+    transition: 0.5s ease;
+}
+.serviços p {
+    font-size: 29px;
+    color: blueviolet;
+    transition: 0.5s ease;
+}
+.serviços .box-serviços {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+.serviços .box-serviços .box-tipos {
+    width: 35vw;
+    height: 50vh;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -4px 4px 10px #e4e4e46b;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.serviços .box-serviços .box-tipos:hover {
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+    box-shadow: -4px 4px 10px white;
+}
+.serviços .box-serviços .box-tipos h3 {
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    border-radius: 25px 25px 0 0;
+    padding: 5px;
+}
+.serviços .box-serviços .mont {
+    background-image: url(IMAGEM/serviços/MOTNAGEM.jpg);
+}
+.serviços .box-serviços .limp {
+    background-image: url(IMAGEM/serviços/LIMEPZA.jpg);
+}
+.serviços .box-serviços .form {
+    background-image: url(IMAGEM/serviços/FORMATAÇÃO.jpg);
+}
+.serviços .box-serviços .troc {
+    background-image: url(IMAGEM/serviços/TROCA\ DE\ PEÇAS.jpg);
+}
+
 
 /* ===================================================================================================== */
 footer {
@@ -539,17 +622,17 @@ footer .navegação li {
 
 
 /* SERVIÇO */
-footer .serviços {
+footer .serviços-footer {
     width: 20%;
 }
 
-footer .serviços h3 {
+footer .serviços-footer h3 {
     color: blueviolet;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-footer .serviços li {
+footer .serviços-footer li {
     margin-bottom: 10px;
 }
 
@@ -586,13 +669,13 @@ footer .contato .box .segundo {
 }
 
 .navegação ul li a,
-.serviços ul li a {
+.serviços-footer ul li a {
     position: relative;
     text-decoration: none;
 }
 
 .navegação ul li a::after,
-.serviços ul li a::after {
+.serviços-footer ul li a::after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -600,14 +683,13 @@ footer .contato .box .segundo {
     width: 100%;
     height: 2px;
     background-color: #8a2be2;
-
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease;
 }
 
 .navegação ul li a:hover::after,
-.serviços ul li a:hover::after {
+.serviços-footer ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
