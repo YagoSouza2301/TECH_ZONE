@@ -18,6 +18,7 @@ body {
     transition: 0.5s;
 }
 
+
 /* Cabeçario */
 header {
     background-color: black;
@@ -721,6 +722,212 @@ footer.dark .contato .box i {
 }
 .diferencial .box-diferencial .custo {
     background-image: linear-gradient(180deg, black 55%, transparent 100%), url(IMAGEM/diferencial/CUSTO.jpg );
+}
+
+
+/* ================================SESSÃO 5================================  */
+.projetos {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: black;
+}
+.projetos .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projetos .title .organizar-title{
+    width: 60%;
+    display: flex;
+}
+.projetos .title-p {
+    margin-left: 5rem;
+}
+.projetos .centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.projetos .centralizar .title-linha {
+    width: 80px;
+    height: 1px;
+    background-color: #8a2be2;
+    margin: 1rem;
+}
+.projetos .centralizar p {
+    font-size: 22px;
+    color: #8a2be2;
+}
+.projetos .p {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.projetos .p span {
+    color: #8a2be2;
+}
+.projetos .destaque {
+    width: 45%;
+    height: auto;
+    margin-right: 10rem;
+    border-left: 2px solid blueviolet;
+    padding: 2rem;
+}
+.projetos .destaque .destaque-tipos {
+    display: flex;
+    align-items: center;
+    margin-left:  1rem;
+    margin-bottom: 10px;
+    gap: 2rem;
+}
+.projetos .destaque .destaque-tipos i {
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+}
+.projetos .destaque .destaque-tipos h4 {
+    font-size: 30px;
+    color: white;
+}
+.projetos .destaque .destaque-tipos p {
+    font-size: 15px;
+    color: slategrey;
+}
+.projetos #box-projetos {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.projetos #box-projetos .box-projetos {
+    background-color: #4d4d4d;
+    width: 22vw;
+    height: 40vh;
+    border-radius: 25px;
+    box-shadow: -2px 2px 10px #8a2be2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.projetos #box-projetos .um {
+    background: linear-gradient(360deg, black 20%, rgba(0, 0, 0, 0.463) 100%), url(IMAGEM/projetos/ANTES.jpg);
+}
+.projetos #box-projetos .dois {
+    background: linear-gradient(360deg, black 20%,  rgba(0, 0, 0, 0.463) 100%), url(IMAGEM/projetos/montagem-completa.jpeg);
+}
+.projetos #box-projetos .tres {
+    background: linear-gradient(360deg, black 20%,  rgba(0, 0, 0, 0.463) 100%), url(IMAGEM/projetos/atualização.jpeg);
+}
+.projetos #box-projetos .um, 
+.projetos #box-projetos .dois,
+.projetos #box-projetos .tres {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projetos #box-projetos .um:hover {
+    background: linear-gradient(360deg, black 20%, transparent 100%), url(IMAGEM/projetos/ANTES.jpg);
+}
+.projetos #box-projetos .dois:hover {
+    background: linear-gradient(360deg, black 20%,  transparent 100%), url(IMAGEM/projetos/montagem-completa.jpeg);
+}
+.projetos #box-projetos .tres:hover {
+    background: linear-gradient(360deg, black 20%,  transparent 100%), url(IMAGEM/projetos/atualização.jpeg);
+}
+.projetos #box-projetos .um:hover, 
+.projetos #box-projetos .dois:hover,
+.projetos #box-projetos .tres:hover {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projetos #box-projetos .box-projetos div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+.projetos #box-projetos .box-projetos div i {
+    font-size: 25px;
+    color: white;
+}
+.projetos #box-projetos .box-projetos div h2 {
+    color: white;
+    font-size: 25px;
+}
+.projetos #box-projetos .box-projetos p {
+    font-size: 18px;
+    color: white;
+}
+.projetos .whatsapp {
+    background: linear-gradient(-45deg, #9019ff, rgb(78, 15, 137) );
+    background-size: 400% 400%;
+    animation: 5s ease infinite gradiente-movimento;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem auto;
+    padding: 15px;
+    border-radius: 25px;
+}
+@keyframes gradiente-movimento {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.projetos .whatsapp .contato-p {
+    display: flex;
+    align-items: center;
+}
+.projetos .whatsapp .contato-p i {
+    font-size: 35px;
+    margin: 0 1rem;
+}
+.projetos .whatsapp .contato-p div h2 {
+    font-size: 30px;
+    color: white;
+}
+.projetos .whatsapp .contato-p div p {
+    color: rgb(45, 44, 44);
+}
+.projetos .whatsapp button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: -2px 3px 10px white;
+    transition: 0.5s ease;
+}
+.projetos .whatsapp button:hover {
+    box-shadow: -2px 3px 10px blueviolet;
+    transform: translate(-1px, 1px);
+}
+.projetos .whatsapp button i {
+    font-size: 25px;
+    margin-right: 5px;
+    color: greenyellow;
+}
+.projetos .whatsapp button a {
+    font-size: 20px;
+    color: white;
 }
 
 
