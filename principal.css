@@ -206,7 +206,6 @@ body.dark .serviços .box-serviços .box-tipos:hover {
     opacity: 1;
 }
 
-
 /* SESSÃO 4 */
 body.dark .diferencial {
     background-color: #fff;
@@ -241,7 +240,25 @@ body.dark .diferencial .box-diferencial .diferencial-motivos:hover {
 body.dark .diferencial .box-diferencial .diferencial-motivos .bola span:hover {
     color: black;
 }
-
+body.dark .projetos {
+    background-color: white;
+}
+body.dark .projetos .p {
+    color: black;
+}
+body.dark .projetos .descrição h4 {
+    color: black;
+}
+body.dark .projetos #box-projetos .box-projetos {
+    box-shadow: -2px 2px 10px #3b3b3b;
+}
+body.dark .projetos .whatsapp button {
+    background-color: white;
+    box-shadow: -2px 3px 10px black;
+}
+body.dark .projetos .whatsapp button a {
+    color: black;
+}
 
 /* RODAPÉ */
 footer.dark .logo-clara {
@@ -731,6 +748,7 @@ footer.dark .contato .box i {
     height: auto;
     padding: 40px;
     background-color: black;
+    transition: 0.5s ease;
 }
 .projetos .title {
     display: flex;
