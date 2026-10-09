@@ -16,6 +16,7 @@ html {
 
 body {
     transition: 0.5s;
+    background-color: black;
 }
 
 
@@ -143,7 +144,7 @@ header.dark li {
 
 /* SESSÕES */
 body.dark {
-    background-color: #e4e4e4;
+    background-color: white;
 }
 /* PRIMEIRA SESSÃO */
 .inicial.dark {
@@ -377,7 +378,7 @@ footer.dark .contato .box i {
     background-color: black;
     color: #fff;
     border-color: transparent;
-    transition: 0.1s ease;
+    transition: 0.5s ease;
 }
 
 .inicial .box-inicial .atenção button:active {
@@ -608,6 +609,9 @@ footer.dark .contato .box i {
     text-align: center;
     background-color: black;
     transition: 0.5s ease;
+    z-index: 999;
+    box-shadow: 5px 0px 30px blueviolet;
+    border-radius: 100px 100px 0 0;
 }
 .diferencial .linha {
     display: flex;
@@ -937,7 +941,9 @@ footer.dark .contato .box i {
 .projetos .whatsapp button:hover {
     box-shadow: -2px 3px 10px blueviolet;
     transform: translate(-1px, 1px);
+    text-shadow: 0 0 20px greenyellow
 }
+
 .projetos .whatsapp button i {
     font-size: 25px;
     margin-right: 5px;
@@ -947,7 +953,6 @@ footer.dark .contato .box i {
     font-size: 20px;
     color: white;
 }
-
 
 /* ===================================================================================================== */
 footer {
